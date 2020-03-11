@@ -49,6 +49,11 @@ export function outside () {
       component: () =>
         import(/* webpackChunkName: "chunk-[request][index]" */ './outside/views/Lookahead.vue'),
       meta: { layout: 'outside', label: 'Lookahead test', topLevel: 'undefined' }
+    },
+    {
+      path: '/feedback',
+      name: 'feedback',
+      component: () => import(/* webpackChunkName: "chunk-[request][index]" */ './outside/views/Feedback.vue'),
     }
   ]
 }

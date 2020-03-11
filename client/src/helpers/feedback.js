@@ -9,3 +9,11 @@ export function   postFeedback (feedback) {
   const base = apiUrl + '/feedback/'
   return axios.post(base, { feedbackData: feedback})
 }
+
+export async function getFeedbackData () {
+  const apiUrl = StoreHelper.apiUrl()
+  const base = apiUrl + '/feedback/'
+  const res = await axios.get(base)
+  const { feedbacks } = res.data
+  return feedbacks
+}
