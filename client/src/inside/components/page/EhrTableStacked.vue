@@ -58,3 +58,16 @@ export default {
 }
 </script>
 
+<style>
+  table {
+    max-width: 100vw;
+    display: block;
+  }
+  tbody {
+    max-width: 100vw;
+    overflow-y: scroll;
+    display:block;
+  }
+</style>
+
+

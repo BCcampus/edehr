@@ -77,3 +77,16 @@ export default {
   }
 }
 </script>
+
+<style>
+  table {
+    max-width: 100vw;
+  }
+  thead, tbody {
+    display: block;
+  }
+  tbody {
+    overflow-y: auto;
+
+  }
+</style>
